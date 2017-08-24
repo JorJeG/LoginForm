@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>LogInYandex</title>
+  <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  <form id="myForm">
+  <form id="myForm" method="get" action="./test/progress.json">
     <p>
       <label for="fio">ФИО</label>
       <input type="text" name="fio" id="fio">
@@ -21,7 +22,7 @@
       <input type="text" name="phone" id="phone">
     </p>
     <p>
-      <input type="submit" value="Submit" id="submitButton">
+      <input type="button" value="Submit" id="submitButton" onclick="MyForm.submit()">
     </p>
   </form>
   <div id="resultContainer">
